@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="height.css">
+  
+
+  <link rel='shortcut icon' type='image/png' href='https://previews.123rf.com/images/valentint/valentint1510/valentint151000587/45749165-first-aid-icon-internet-button-on-white-background-.jpg'>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <script src="height.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md bg-danger navbar-danger">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#FAid">
+            <span class="navbar-toggler-icon"></span>
+            <i class="fa fa-navicon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="FAid">
+            <ul class="navbar-nav">
+               <li class="nav-item"><a href="index.html" class="nav-link text-light"> <h4><i class="fa fa-home"></i> Home</h4></a></li>
+               <li class="nav-item"><a href="first.html" class="nav-link text-light"> <h4><i class="fa fa-user-md"></i> "First"Aiders</h4></a></li>
+               <li class="nav-item"><a href="aims.html" class="nav-link text-light"><h4><i class="fa fa-tasks"></i> Aims</h4></a></li>
+               <li class="nav-item"><a href="method.html" class="nav-link text-light"><h4><i class="fa fa-plus-square"></i> Method</h4></a></li>
+               <li class="nav-item"><a href="kits.html" class="nav-link text-light"><h4><i class="fa fa-medkit"></i> Kits</h4></a></li>
+               <li class="nav-item text-light">
+                <div class="dropdown">  
+                    <button class="dropbtn"><i class="fa fa-solid fa-calculator"></i> Health Calculators</button>
+                    
+                    <div class="dropdown-content">
+
+                        <a href="bmi.html" class="nav-link text-light"><i class="fa fa-solid fa-weight-scale"></i> BMI calculator</a>
+                        <a href="hrate.html" class="nav-link text-light"><i class="fa fa-heartbeat"></i> Heart rate</a>
+                        <a href="age.html" class="nav-link text-light"><i class="fa fa-solid fa-calculator"></i> Age calculator</a>
+                        <a href="height.html" class="nav-link text-light"><i class="fa fa-solid fa-weight-scale"></i> Height & Weight calculator</a>
+                    </div>
+            </div> 
+        </li>
+               <li class="nav-item"><a href="join.html" class="nav-link text-light"><h4><i class="fa fa-pencil-square-o"></i> Join Us</h4></a></li>
+
+    </nav>
+<br><br>
+
+<center>
+<form action="">
+    <label for="" id="hlabel">Enter your height in cm:</label>
+    <br>
+    <input type="number" id="hheight" placeholder="Enter your height in cm." onchange="heightcal();">
+    <br>
+    <span id="act_height"></span>
+    <br><br><br>
+    <label for="" id="wlabel">Enter your weight in lbs:</label>
+    <br>
+    <input type="number" id="wweight" placeholder="Enter your weight in lbs" onchange="weightcal();">
+    <br>
+    <span id="act_weight"></span>
+</form>
+
+<br><br><br>
+<img src="h&wimg.png" width="400" height="400">
+</center>
+<br><br>
+
+<div class="para">
+    <h2>Impact of Height & Weight on lifespan</h2>
+    The study was conducted to evaluate one aspect of the entropy theory of aging, which hypothesizes that aging is the result of increasing disorder within the body, and which predicts that increasing mass lowers life span. The first evaluation of the impact of human size on longevity or life span in 1978, which was based on data for decreased groups of athletes and famous people in the USA, suggested that shorter, lighter men live longer than their taller, heavier counterparts. In 1990, a study of 1679 decreased men and women from the general American population supported these findings. In the present study data on the height, weight, and age at death of 373 men were obtained from records at the Veterans Administration Medical Center, San Diego, CA, USA. Men of height 175.3 cm or less lived an average of 4.95 years longer than those of height over 175.3 cm, while men of height 170.2 cm or less lived 7.46 years longer than those of at least 182.9 cm. An analysis by weight difference revealed a 7.72-year greater longevity for men of weight 63.6 kg or less compared with those of 90.9 kg or more. This corroborates earlier evidence and contradicts the popular notion that taller people are healthier. While short stature due to malnutrition or illness is undesirable, our study suggests that feeding children for maximum growth and physical development may not add to and may indeed be harmful to their long-term health and longevity.
+</div>
+
+<br><br><br><br><br><br>
+    <footer class="foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">
+                        Copyright &copy; 2022 All rights reserved by www.First_aid-web.com
+                    </p>
+                </div>
+        
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li> <a href="#" class="facebook"> <i class="fa fa-facebook"></i> </a> </li>
+                        <li> <a href="#" class="twitter"> <i class="fa fa-twitter"></i> </a> </li>
+                        <li> <a href="#" class="dribbble"> <i class="fa fa-dribbble"></i></a> </li>
+                        <li> <a href="#" class="linkedin"> <i class="fa fa-linkedin"></i></a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </footer>
+</body>
+
+</html>
+
+    

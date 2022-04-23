@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="hrate.css">
+
+  <link rel='shortcut icon' type='image/png' href='https://previews.123rf.com/images/valentint/valentint1510/valentint151000587/45749165-first-aid-icon-internet-button-on-white-background-.jpg'>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <script src="hrate.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md bg-danger navbar-danger">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#FAid">
+            <span class="navbar-toggler-icon"></span>
+            <i class="fa fa-navicon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="FAid">
+            <ul class="navbar-nav">
+               <li class="nav-item"><a href="index.html" class="nav-link text-light"> <h4><i class="fa fa-home"></i> Home</h4></a></li>
+               <li class="nav-item"><a href="first.html" class="nav-link text-light"> <h4><i class="fa fa-user-md"></i> "First"Aiders</h4></a></li>
+               <li class="nav-item"><a href="aims.html" class="nav-link text-light"><h4><i class="fa fa-tasks"></i> Aims</h4></a></li>
+               <li class="nav-item"><a href="method.html" class="nav-link text-light"><h4><i class="fa fa-plus-square"></i> Method</h4></a></li>
+               <li class="nav-item"><a href="kits.html" class="nav-link text-light"><h4><i class="fa fa-medkit"></i> Kits</h4></a></li>
+               <li class="nav-item text-light">
+                <div class="dropdown">  
+                    <button class="dropbtn"><i class="fa fa-solid fa-calculator"></i> Health Calculators</button>
+                    
+                    <div class="dropdown-content">
+
+                        <a href="bmi.html" class="nav-link text-light"><i class="fa fa-solid fa-weight-scale"></i> BMI calculator</a>
+                        <a href="hrate.html" class="nav-link text-light"><i class="fa fa-heartbeat"></i> Heart rate</a>
+                        <a href="age.html" class="nav-link text-light"><i class="fa fa-solid fa-calculator"></i> Age calculator</a>
+                        <a href="height.html" class="nav-link text-light"><i class="fa fa-solid fa-weight-scale"></i> Height & Weight calculator</a>
+                    </div>
+            </div> 
+        </li>
+               <li class="nav-item"><a href="join.html" class="nav-link text-light"><h4><i class="fa fa-pencil-square-o"></i> Join Us</h4></a></li>
+
+    </nav>
+<br><br>
+
+<center>
+<form action="">
+    <label id="plabel">Specify number of pulse recive in 10 seconds.</label>
+    <br><br><br>
+    <input type="range" id="pulse" min="5" max="20" onchange="calbpm();">
+    <br><br><br>
+    <span id="bpm"></span>
+    
+</form>
+
+<br><br><br>
+
+<img src="https://i0.wp.com/agelessinvesting.com/wp-content/uploads/2019/02/Resting-Heart-Rate-Chart-By-Age-For-Men-and-Women-min.png" alt="">
+</center>
+
+<br><br>
+
+<div class="para">
+    <h2>Heart Rate</h2>
+Even if you’re not an athlete, knowledge about your heart rate can help you monitor your fitness level — and it might even help you spot developing health problems.
+
+Your heart rate, or pulse, is the number of times your heart beats per minute. Normal heart rate varies from person to person. Knowing yours can be an important heart-health gauge.
+
+As you age, changes in the rate and regularity of your pulse can change and may signify a heart condition or other condition that needs to be addressed.
+
+<h3>Where is it and what is a normal heart rate?</h3>
+The best places to find your pulse are the:
+<br>
+<ul>
+    <li>Wrists</li>
+    <li>Inside of your elbow</li>
+    <li>Side of your neck</li>
+    <li>Top of the foot</li>
+
+
+
+
+</ul>
+To get the most accurate reading, put your finger over your pulse and count the number of beats in 60 seconds.
+
+Your resting heart rate is the heart pumping the lowest amount of blood you need because you’re not exercising. If you’re sitting or lying and you’re calm, relaxed and aren’t ill, your heart rate is normally between 60 (beats per minute) and 100 (beats per minute).
+
+But a heart rate lower than 60 doesn’t necessarily signal a medical problem. It could be the result of taking a drug such as a beta blocker. A lower heart rate is also common for people who get a lot of physical activity or are very athletic. Active people often have a lower resting heart rate (as low as 40) because their heart muscle is in better condition and doesn’t need to work as hard to maintain a steady beat. A low or moderate amount of physical activity doesn’t usually change the resting pulse much. 
+</div>
+
+<br><br><br><br><br><br>
+    <footer class="foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">
+                        Copyright &copy; 2022 All rights reserved by www.First_aid-web.com
+                    </p>
+                </div>
+        
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li> <a href="#" class="facebook"> <i class="fa fa-facebook"></i> </a> </li>
+                        <li> <a href="#" class="twitter"> <i class="fa fa-twitter"></i> </a> </li>
+                        <li> <a href="#" class="dribbble"> <i class="fa fa-dribbble"></i></a> </li>
+                        <li> <a href="#" class="linkedin"> <i class="fa fa-linkedin"></i></a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </footer>
+</body>
+
+</html>
+
+    

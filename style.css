@@ -1,0 +1,486 @@
+body{
+    background-image: url("https://totalbodyorthotics.com/wp-content/uploads/2020/09/first-aid.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.para{
+    background-color: rgba(255, 255, 255, 0.566);
+    padding:15px;
+    margin:15px;
+}
+
+.jumbotron{
+    margin:10px;
+    border:2px solid red;
+}
+
+.personimg{
+    height:200px;
+    width:150px;
+    border-radius:10px;
+    border:3px double rgb(9, 189, 230);
+}
+
+#container{
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    touch-action: none;
+    background: linear-gradient(toleft, red,white);
+}
+#item{
+    width: 60px;
+    height:60px;
+    background-color: white;
+    border-radius:50%;
+    touch-action:none;
+    user-select: none;
+    position: relative;
+}
+.cal-span{
+    width: 60px;
+    height:60px;
+    background-color: white;
+    border-radius:50%;
+    touch-action:none;
+    user-select: none;
+    box-shadow:red 0px 6px 12px -2px, white 0px 3px 7px -3px;
+    position: absolute;
+    z-index:-1;
+    visibility: hidden;
+    opacity:0;
+    transition: all 0.3s;
+    transform: scale(0.25);
+    transform-style: 50% 100%;
+
+    
+}
+
+.cal-span:nth-child(1){
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    margin-top:-80px;
+}
+.cal-span:nth-child(2){
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    margin-left:-80px;
+}
+.cal-span:nth-child(3){
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    margin-top:80px;
+}
+.cal-span:nth-child(4){
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    margin-left:80px;
+}
+
+.cal-span .fa{
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.container2{
+    height: 270px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow:red 0px 2px 8px 0px;
+    margin:40px;
+}
+.title{
+    color: white;
+    text-align:center;
+    font-size: 20px;
+}
+.title_div{
+height: 30px;
+width:100%;
+background-color: rgb(232, 16, 56);
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+position: absolute;
+}
+
+input{
+    border: none;
+    outline: none;
+    border: 1px solid gray;
+    height:30px;
+    width: 80px;
+    text-align:center ;
+    margin-left: -20px;
+    margin-top: 100px;
+    position: relative;
+    left: -10px;
+}
+label{
+position:relative;
+top: -35px;
+left: 35px;
+}
+.calculate{
+    all: unset;
+    background:rgb(5, 206, 251);
+    padding: 5px;
+    color: white;
+    width: 150px;
+    text-align:center;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container3{
+    height: 260px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow:red 0px 2px 8px 0px;
+    margin:40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.img{
+    position: absolute;
+    top: 350px;
+    left: 40%;
+}
+
+.h-range{
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    border-radius:10px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform:translate(-50%,-50%);
+
+}
+
+.w-range{
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    border-radius:10px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform:translate(-50%,-50%);
+
+}
+
+.h-text{
+    position: absolute;
+    top: 40px;
+    left: 80%;
+}
+
+.w-text{
+    position: absolute;
+    top: 80px;
+    left: 80%;
+}
+
+.range::-webkit-slider-thumb{
+    height: 15px;
+    width: 15px;
+    background-color: red;
+    border-radius: 100%;
+
+}
+.bmi_value, .h_status{
+position: absolute;
+bottom: 20px;
+
+}
+.bmi_value{
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+padding: 5px;
+width: 60px;
+text-align: center;
+color: rgb(243, 17, 17);
+position: absolute;
+left: 30%;
+transform:translate(-50%,-50%);
+border-radius:3px;
+}
+
+.bmi_value::before{
+    content:"Your BMI is ";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:15px;
+    white-space: nowrap;
+    top: -20px;
+    color:black;
+
+}
+
+
+
+.h_status{
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+}
+
+.container4{
+    height: 260px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow:red 0px 2px 8px 0px;
+    margin:40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#input-h{
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    font-size:15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(18, 135, 252);
+}
+
+#input-w{
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    font-size:15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(18, 135, 252);
+}
+
+#height, #weight{
+    position: absolute;
+    height: 50px;
+    width:100px;
+    font-size:15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(18, 135, 252);
+    background-color: white;
+    border-radius:15px;
+    border:5px double red;   
+}
+
+
+
+.foot{
+    background-color:#26272b;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#e40c0c;
+  
+  }
+
+  .foot a{
+    color:#737373;
+  text-decoration:none;
+  }
+  
+  .foot a:hover{
+    color:#3366cc;
+  
+  }
+  
+  .foot .social-icons
+  {
+    text-align:right;
+  }
+  
+  .foot .social-icons a
+  {
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#33353d
+  }
+       
+  .copyright-text
+  {
+    margin:0;
+  }
+  
+  @media (max-width:991px)
+  {
+    .site-footer [class^=col-]
+    {
+      margin-bottom:30p;
+    }
+  }
+  
+  @media (max-width:767px)
+  {
+    .site-footer
+    {
+      padding-bottom:0;
+    }
+  
+    .foot .copyright-text,.site-footer .social-icons
+    {
+      text-align:center;
+    }
+  }
+  
+  .social-icons
+  {
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none
+  }
+  
+  .social-icons li
+  {
+    display:inline-block;
+    margin-bottom:4px
+  }
+  
+  .social-icons li.title
+  {
+    margin-right:15px;
+    text-transform:uppercase;
+    color:#96a2b2;
+    font-weight:700;
+    font-size:13px
+  }
+  
+  .social-icons a{
+    background-color:#eceeef;
+    color:#818a91;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+  }
+  
+  .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+  {
+    color:#fff;
+    background-color:#29aafe
+  }
+  
+  .social-icons.size-sm a
+  {
+    line-height:34px;
+    height:34px;
+    width:34px;
+    font-size:14px
+  }
+  
+  .social-icons a.facebook:hover
+  {
+    background-color:#3b5998
+  }
+  
+  .social-icons a.twitter:hover
+  {
+    background-color:#00aced
+  }
+  
+  .social-icons a.linkedin:hover
+  {
+    background-color:#007bb6
+  }
+  
+  .social-icons a.dribbble:hover
+  {
+    background-color:#ec357b
+  }
+  
+  @media (max-width:767px)
+  {
+    .social-icons li.title
+    {
+      display:block;
+      margin-right:0;
+      font-weight:600
+    }
+  }
+  
+  .dropbtn {
+    background-color: #d20f0f;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f41616;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f53030}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #ef1111;
+  }
+  
